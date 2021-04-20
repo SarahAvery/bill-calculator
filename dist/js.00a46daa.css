@@ -1,6 +1,107 @@
 body {
   height: 100%;
-  background-color: lightcoral;
+  background-image: url(/food.276e8dc6.png);
+}
+
+.visually-hidden {
+  background-color: #fff;
+  color: #000;
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+.calculator {
+  margin: 20px auto;
+  background-color: #fffef8;
+  max-width: 300px;
+  height: auto;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.calculator h1 {
+  text-align: center;
+  border-bottom: 1px solid black;
+  padding: 10px 0;
+}
+.calculator p {
+  padding: 4px 0;
+  font-weight: bold;
+  margin-right: 8px;
+}
+.calculator form {
+  padding: 10px;
+  /* Change Autocomplete styles in Chrome*/
+}
+.calculator form div {
+  margin: 8px 0;
+  display: flex;
+  align-items: center;
+}
+.calculator form span {
+  margin-right: 4px;
+}
+.calculator form input,
+.calculator form select {
+  width: 100px;
+  background-color: rgba(250, 197, 100, 0.2);
+  border: 1px solid grey;
+  border-radius: 4px;
+}
+.calculator form input:-webkit-autofill,
+.calculator form input:-webkit-autofill:hover,
+.calculator form input:-webkit-autofill:focus input:-webkit-autofill,
+.calculator form textarea:-webkit-autofill,
+.calculator form textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus,
+.calculator form select:-webkit-autofill,
+.calculator form select:-webkit-autofill:hover,
+.calculator form select:-webkit-autofill:focus {
+  -webkit-text-fill-color: #000;
+  transition: background-color 5000s ease-in-out 0s;
+}
+.calculator form input[type=text] {
+  padding-left: 5px;
+}
+.calculator .btn {
+  text-align: center;
+  justify-content: center;
+  margin: 10px 0;
+}
+.calculator .btn button {
+  font-weight: bold;
+  font-size: 18px;
+  color: #fff;
+  background-color: #fac564;
+  padding: 5px 15px;
+  outline: none;
+  border-radius: 4px;
+  border: 0.5px solid #111;
+}
+.calculator .totalSplit {
+  padding: 10px;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.calculator .totalSplit .bill,
+.calculator .totalSplit .split {
+  width: 50%;
+}
+.calculator .totalSplit div {
+  display: block;
+  margin: 8px 0;
+}
+.calculator .totalSplit p span {
+  font-weight: 400;
 }
 
 /*# sourceMappingURL=/js.00a46daa.css.map */
